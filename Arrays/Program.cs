@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            TwoNumbersEqualValueSolution();
+            ProductOfAllElementsSolution();
         }
 
         static void RemoveEvenIntegersSolution()
@@ -36,7 +36,16 @@
             Console.WriteLine("Target: " + 81);
             Console.WriteLine("Num 1 is " + result[0]);
             Console.WriteLine("Num 2 is " + result[1]);
+        }
 
+        static void ProductOfAllElementsSolution()
+        {
+            int[] arr = {4,2,1,5,0};
+            int[] result = ProductOfAllElements.Solution(arr);
+            foreach (int num in result)
+            {
+                Console.Write(num + " ");
+            }
         }
     }
 }
