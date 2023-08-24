@@ -3,6 +3,8 @@ namespace Arrays
 {
 	public class RemoveEvenIntegers
 	{
+        //Challenge: Implement a function that takes an array arr and removes all the even elements from the given array.
+
         public static int[] Solution(int[] arr)
         {
             //This variable will serve two purposes:

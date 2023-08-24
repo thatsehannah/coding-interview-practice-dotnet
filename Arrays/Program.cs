@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            MergeTwoSortedArraysSolution();
+            TwoNumbersEqualValueSolution();
         }
 
         static void RemoveEvenIntegersSolution()
@@ -27,6 +27,16 @@
             {
                 Console.Write(num + " ");
             }
+        }
+
+        static void TwoNumbersEqualValueSolution()
+        {
+            int[] arr = { 1, 21, 3, 14, 5, 60, 7, 6 };
+            int[] result = TwoNumbersEqualValue.Solution(arr, 81);
+            Console.WriteLine("Target: " + 81);
+            Console.WriteLine("Num 1 is " + result[0]);
+            Console.WriteLine("Num 2 is " + result[1]);
+
         }
     }
 }

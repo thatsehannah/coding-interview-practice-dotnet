@@ -1,24 +1,29 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Arrays
 {
-	public class MergeTwoSortedArrays
-	{
-		public static int[] Solution(int[] arr1, int[] arr2)
-		{
+    public class MergeTwoSortedArrays
+    {
+        //Implement a function that merges two sorted arrays into another sorted array.
+
+        public static int[] Solution(int[] arr1, int[] arr2)
+        {
 			int[] mergedArray = new int[arr1.Length + arr2.Length];
 			int mergedArrayIndex = 0;
 
+			//loop through first array, add elements to mergedArray
 			for (int i = 0; i < arr1.Length; i++)
 			{
 				mergedArray[mergedArrayIndex++] = arr1[i];
 			}
 
-			for (int j = 0; j < arr2.Length; j++)
+            //loop through second array, add elements to mergedArray
+            for (int j = 0; j < arr2.Length; j++)
 			{
 				mergedArray[mergedArrayIndex++] = arr2[j];
 			}
 
-			Array.Sort(mergedArray);
+			Array.Sort(mergedArray); //use the built-in .Sort() method to sort
 
 			return mergedArray;
 		}
