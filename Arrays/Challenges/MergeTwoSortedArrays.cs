@@ -4,7 +4,7 @@ namespace Arrays
 {
     public class MergeTwoSortedArrays
     {
-        //Implement a function that merges two sorted arrays into another sorted array.
+        //Challenge: Implement a function that merges two sorted arrays into another sorted array.
 
         public static int[] Solution(int[] arr1, int[] arr2)
         {
