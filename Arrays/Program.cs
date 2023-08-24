@@ -4,7 +4,14 @@
     {
         public static void Main(string[] args)
         {
-            ProductOfAllElementsSolution();
+            FindSmallestInArraySolution();
+        }
+
+        static void FindSmallestInArraySolution()
+        {
+            int[] arr = { 9, 2, 3, 6 };
+            int smallest = FindSmallestInArray.Solution(arr);
+            Console.WriteLine($"Smallest value in array: {smallest}");
         }
 
         static void RemoveEvenIntegersSolution()
