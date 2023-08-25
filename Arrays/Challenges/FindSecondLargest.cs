@@ -42,20 +42,20 @@ namespace Arrays
             int max = int.MinValue;
             int secondmax = int.MinValue;
 
-            // Keep track of the maximum value, whenever the value at an array index is greater
-            // than the current maximum value, then make that max value second max value and
-            // make that index value maximum value 
             for (int i = 0; i < arr.Length; i++)
             {
+                // If ith element is greater than max
+                // Then update both max and secondmax
                 if (arr[i] > max)
+                {
+                    secondmax = max;
                     max = arr[i];
-            }//end of for-loop
-
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i] > secondmax && arr[i] < max)
+                }
+                // If the ith element is in between max and secondmax
+                // Then update secondmax
+                else if (arr[i] > secondmax && arr[i] != max)
                     secondmax = arr[i];
-            }//end of for-loop
+            }
 
             return secondmax;
         }
