@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Drawing;
-
+using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace Arrays
 {
-	public class FindSecondLargest
-	{
-		public static int Solution(int[] arr)
+    //Implement a function that takes an array arr as input and returns the second maximum element in the array.
+
+    public class FindSecondLargest
+    {
+        public static int Solution(int[] arr)
 		{
             //Array.Sort(arr); --------> Original Solution
             //return arr[arr.Length - 2];
