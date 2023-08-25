@@ -4,7 +4,22 @@
     {
         public static void Main(string[] args)
         {
-            FindSmallestInArraySolution();
+            FindFirstUniqueSolution();
+        }
+
+        static void FindFirstUniqueSolution()
+        {
+            int[] arr = { 2,3,9,2,3,6 };
+            int unique = FindFirstUnique.Solution(arr);
+
+            if (unique == -1)
+            {
+                Console.WriteLine("No unique element found");
+            }
+            else
+            {
+                Console.WriteLine($"First unique element: {unique}");
+            }
         }
 
         static void FindSmallestInArraySolution()
