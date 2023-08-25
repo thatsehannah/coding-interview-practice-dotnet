@@ -1,7 +1,4 @@
-﻿using System;
-using System.Drawing;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-namespace Arrays
+﻿namespace Arrays
 {
     //Implement a function that takes an array arr as input and returns the second maximum element in the array.
 

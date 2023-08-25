@@ -1,5 +1,4 @@
-﻿using System;
-namespace Arrays
+﻿namespace Arrays
 {
 	public class RemoveEvenIntegers
 	{

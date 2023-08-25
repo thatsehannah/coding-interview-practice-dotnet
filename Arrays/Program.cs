@@ -4,7 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            FindSecondLargestSolution();
+            ShiftArrayToRightSolution();
+        }
+
+        static void ShiftArrayToRightSolution()
+        {
+            int[] arr = { -23, 1, -2, 5, 44, -9, 8 };
+            ShiftArrayToRight.Solution(arr);
+            //ShiftArrayToRight.CourseSolution(arr);
+            foreach (int num in arr)
+            {
+                Console.Write($"{num} ");
+            }
         }
 
         static void FindSecondLargestSolution()
