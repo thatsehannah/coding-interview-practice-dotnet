@@ -4,7 +4,15 @@
     {
         public static void Main(string[] args)
         {
-            FindFirstUniqueSolution();
+            FindSecondLargestSolution();
+        }
+
+        static void FindSecondLargestSolution()
+        {
+            int[] arr = { 4,2,1,5,0 };
+            int result = FindSecondLargest.Solution(arr);
+            //int result = FindSecondLargest.CourseSolution(arr);
+            Console.WriteLine($"Second largest in array: {result}");
         }
 
         static void FindFirstUniqueSolution()
