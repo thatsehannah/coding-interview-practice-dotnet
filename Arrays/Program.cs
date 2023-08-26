@@ -4,7 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            ShiftArrayToRightSolution();
+            RearrangePosNegValuesSolution();
+        }
+
+        static void RearrangePosNegValuesSolution()
+        {
+            int[] arr = { -23, 1, -2, 0, 44, -9, 8 };
+            arr = RearrangePosNegValues.Solution(arr);
+            //arr = RearrangePosNegValues.CourseSolution(arr);
+            foreach (int num in arr)
+            {
+                Console.Write($"{num} ");
+            }
         }
 
         static void ShiftArrayToRightSolution()
