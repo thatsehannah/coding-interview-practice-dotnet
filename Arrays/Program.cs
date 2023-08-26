@@ -4,7 +4,17 @@
     {
         public static void Main(string[] args)
         {
-            RearrangePosNegValuesSolution();
+            RearrangeSortedArraySolution();
+        }
+
+        static void RearrangeSortedArraySolution()
+        {
+            int[] arr = { 12, 23, 34, 45, 56, 67, 78 };
+            arr = RearrangeSortedArray.Solution(arr);
+            foreach(int num in arr)
+            {
+                Console.Write($"{num} ");
+            }
         }
 
         static void RearrangePosNegValuesSolution()
